@@ -86,16 +86,6 @@
                 tremorChart.data.datasets[0].data.push(entry.magnitude);
               }
             });
-
-            //ini yang sy tamabh
-            const MAX_POINTS = 50; // tampilkan hanya 50 titik terakhir
-          if (tremorChart.data.labels.length > MAX_POINTS) {
-              tremorChart.data.labels.shift(); // hapus label lama
-              tremorChart.data.datasets[0].data.shift(); // hapus data lama
-              }
-
-
-            
             tremorChart.update();
           }
         });
@@ -129,4 +119,5 @@
     <canvas id="tremorChart" width="600" height="400"></canvas>
   </body>
 </html>
+
 
